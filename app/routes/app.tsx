@@ -105,45 +105,6 @@ export default function App() {
           >
             {appNavLabel("Stock & Products")}
           </s-link>
-          {paySyncOn ? (
-            <>
-              <s-link
-                href={withEmbeddedSearch("/app/paysync", search, {
-                  product: null,
-                })}
-              >
-                {appNavLabel("PaySync")}
-              </s-link>
-              <s-link
-                href={withEmbeddedSearch("/app/paysync/orders", search, {
-                  product: null,
-                })}
-              >
-                {appNavLabel("Orders", 1)}
-              </s-link>
-              <s-link
-                href={withEmbeddedSearch("/app/paysync/queue", search, {
-                  product: null,
-                })}
-              >
-                {appNavLabel("Sync queue", 1)}
-              </s-link>
-              <s-link
-                href={withEmbeddedSearch("/app/paysync/paypal", search, {
-                  product: null,
-                })}
-              >
-                {appNavLabel("Payment accounts", 1)}
-              </s-link>
-              <s-link
-                href={withEmbeddedSearch("/app/paysync/settings", search, {
-                  product: null,
-                })}
-              >
-                {appNavLabel("PaySync settings", 1)}
-              </s-link>
-            </>
-          ) : null}
           <s-link
             href={withEmbeddedSearch("/app/billing/plans", search, {
               product: null,

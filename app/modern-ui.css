@@ -1371,6 +1371,29 @@ body {
   z-index: 2;
 }
 
+.seoi-workspace-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 16px;
+}
+
+.seoi-workspace-nav__link {
+  height: 34px !important;
+  min-height: 34px !important;
+  max-height: 34px !important;
+  padding: 0 12px !important;
+  border-radius: 999px !important;
+  font-size: 13px !important;
+  line-height: 34px !important;
+}
+
+.seoi-workspace-nav__link--active {
+  background: #eef2ff !important;
+  border-color: #a5b4fc !important;
+  color: #3730a3 !important;
+}
+
 .seoi-home-bar .seoi-home-link,
 button.seoi-home-link {
   display: inline-flex !important;
